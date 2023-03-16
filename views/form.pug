@@ -1,0 +1,8 @@
+extends layout
+
+block content 
+  h1 New Message
+  form(class="form" method="POST" action="/new")
+    input(name="author" type="text" placeholder="Name" required autofocus)
+    input(name="messageText" type="text" placeholder="Message" required)
+    button Send

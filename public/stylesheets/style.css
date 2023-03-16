@@ -3,6 +3,42 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+a,
+button {
+  text-decoration: none;
+  background-color: #222;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 3px;
+  color: white;
+}
+
+a:hover,
+button:hover {
+  background-color: black;
+}
+
+button {
+  border-style: none;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.message {
+  margin-bottom: 25px;
+  border-bottom: 1px solid black;
+}
+
+.message p {
+  margin: 10px 0;
+}
+
+form input[name="messageText"] {
+  height: 2rem;
 }
