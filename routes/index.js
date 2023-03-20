@@ -1,6 +1,8 @@
 var express = require("express");
 var router = express.Router();
 
+const fruit = process.env.fruit;
+
 const messages = [
   {
     text: "Hi there!",
@@ -16,7 +18,7 @@ const messages = [
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("index", { title: "Mini Message Board", messages });
+  res.render("index", { title: "Mini Message Board", messages, fruit });
 });
 
 router.get("/new", function (req, res, next) {
